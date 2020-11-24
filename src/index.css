@@ -11,39 +11,43 @@ body {
   padding: 10px;
   border-radius: 15px;
   box-shadow: -1px -1px 12px 5px rgba(232, 232, 232, 1);
-  }
+}
 
-  .inputdiv {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 70px;
-  }
+.inputdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 70px;
+}
 
-  h1 {
-    font-size: 44px;
-  }
+h1 {
+  font-size: 44px;
+}
 
-  input[type="text"] {
-    padding: 5px;
-  }
+input[type="text"],
+select {
+  padding: 5px;
+  min-width: 200px;
+}
 
-  input[type="submit"] {
-    padding: 10px;
-    font-weight: bold;
-    background-color: white;
-    border: none;
-    box-shadow: -1px -1px 12px 3px rgba(232, 232, 232, 1);
-    font-size: 15px;
-  }
+input[type="submit"] {
+  padding: 10px;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  box-shadow: -1px -1px 12px 3px rgba(232, 232, 232, 1);
+  font-size: 15px;
+}
 
-  input[type="submit"]:hover {
-    background-color: black;
-    color: white;
+input[type="submit"]:hover {
+  background-color: black;
+  color: white;
 }
 
 ul {
-  list-style: none;
+  list-style-type: none;
+  margin: 10px 0px;
+  padding: 0;
 }
 
 li {
