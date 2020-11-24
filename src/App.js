@@ -13,6 +13,7 @@ class App extends Component {
       this.setState({ loader: false });
     }, 3000);
     const character = e.target["Character"].value;
+    e.target["Character"].value = "";
     const resource = e.target["resource"].value;
     fetch(`https://swapi-thinkful.herokuapp.com/api/${resource}/`)
       .then((response) => {
