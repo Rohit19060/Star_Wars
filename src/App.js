@@ -1,6 +1,5 @@
 import { Component } from "react";
 import Result from "./Result";
-import Loader from "react-loader-spinner";
 class App extends Component {
   state = {
     result: [],
@@ -82,15 +81,11 @@ class App extends Component {
           <br />
         </form>
         <ul>
-          {this.state.loader ? (
-            <Loader type="ThreeDots" color="Black" timeout={3000} />
-          ) : (
-            this.state.result.map((e, i) => (
-              <li key={i}>
-                <Result name={e} />
-              </li>
-            ))
-          )}
+          {this.state.result.map((e, i) => (
+            <li key={i}>
+              <Result name={e} />
+            </li>
+          ))}
         </ul>
       </div>
     );
